@@ -1,0 +1,38 @@
+/* EventLifecycle.css */
+
+.event-lifecycle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+  }
+  
+  .phase {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+
+  .darkblue {
+    background-color: darkblue;
+  }
+
+  .teal {
+    background-color: teal;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  

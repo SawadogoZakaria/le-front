@@ -1,4 +1,9 @@
 import React from "react";
+import EventLifecycle from "./LifeCycle";
+import Planning from "./Planning";
+import Promotion from "./Promotion";
+import DayOfEvent from "./DayOfEvent";
+import PostEvent from "./PostEvent";
 function Home() {
   return (
     <>
@@ -9,10 +14,8 @@ function Home() {
       <div className="row justify-content-center">
         <div className="col-lg-6 text-center">
           <h2 data-aos="fade-down">Welcome to <span>EventPlanner</span></h2>
-          <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <a data-aos="fade-up" data-aos-delay={200} href="#get-started" className="btn-get-started">Get Started</a>
+          <p data-aos="fade-up">La solution digitale pour vos événements :Application événementielle </p>
+          <a data-aos="fade-up" data-aos-delay={200} href="#get-started" className="btn-get-started">Commencer</a>
         </div>
       </div>
     </div>
@@ -24,18 +27,19 @@ function Home() {
     <div className="carousel-item" style={{backgroundImage: 'url(assets/img/hero-carousel/hero-carousel-3.jpg)'}} />
     <div className="carousel-item" style={{backgroundImage: 'url(assets/img/hero-carousel/hero-carousel-4.jpg)'}} />
     <div className="carousel-item" style={{backgroundImage: 'url(assets/img/hero-carousel/hero-carousel-5.jpg)'}} />
-    <a className="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+    {/*<a className="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
       <span className="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true" />
     </a>
     <a className="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
       <span className="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true" />
-    </a>
+    </a>*/}
   </div>
 </section>{/* End Hero Section */}
 
 <main id="main" style={{ backgroundColor: '', }}>
   {/* ======= Get Started Section ======= */}
-  <section id="get-started" className="get-started section-bg">
+  
+  {/*<section id="get-started" className="get-started section-bg">
     <div className="container">
       <div className="row justify-content-between gy-4">
         <div className="col-lg-6 d-flex align-items-center" data-aos="fade-up">
@@ -74,11 +78,30 @@ function Home() {
               </div>
             </div>
           </form>
-        </div>{/* End Quote Form */}
+        </div>{/* End Quote Form *
       </div>
     </div>
-  </section>{/* End Get Started Section */}
+  </section>* End Get Started Section *//*}
+  
+
   {/* ======= Constructions Section ======= */}
+  <section>
+    <EventLifecycle/>
+
+    <div className="App">
+      <header>
+        <h1>Marketing et planification d'événements</h1>
+      </header>
+      <main>
+        <section className="event-lifecycle">
+          <Planning />
+          <Promotion />
+          <DayOfEvent />
+          <PostEvent />
+        </section>
+      </main>
+    </div>
+  </section>
   <section id="constructions" className="constructions">
     <div className="container" data-aos="fade-up">
       <div className="section-header">

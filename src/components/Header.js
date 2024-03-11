@@ -4,7 +4,7 @@ import React from "react";
 function Header() {
   const logoStyle = {
 
-    width: '160px',
+    width: '16 0px',
     height: '700px', /* Remplacez par la hauteur souhaitée */
     objectFit: 'cover',
   };
